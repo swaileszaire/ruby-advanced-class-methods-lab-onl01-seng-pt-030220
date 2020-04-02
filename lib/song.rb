@@ -36,7 +36,7 @@ class Song
   def create_by_name 
     song = self.new 
     song.name = name 
-    @@all = 
+    @@all 
     #takes string name of song 
     #returns song instance with name set as name property 
     #song saved to @@all 
