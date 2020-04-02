@@ -57,7 +57,7 @@ class Song
   end 
     
   def find_or_create_by_name 
-    
+    self.find
     #takes string name 
     #return matching song instance with name 
     #or
