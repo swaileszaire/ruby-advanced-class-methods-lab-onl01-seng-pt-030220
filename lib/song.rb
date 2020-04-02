@@ -20,6 +20,7 @@ class Song
   
   
   def new_by_name
+    song = self.new 
     
     #takes name of song 
     #returns song instance with that name set as name property
