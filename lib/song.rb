@@ -41,8 +41,6 @@ class Song
   
   def alphabetical 
      @@all.sort_by{|x| x.name}
-      #returns all songs in ascending order a-z
-      #use array sort_by 
   end
   
   def new_from_filename 
@@ -50,7 +48,6 @@ class Song
     song.name = (name.split(" - ")[1].chomp(".mp3"))
     song.artist_name = (name.split(" - ")[0])
     song
-    #description is way too long like damn
   end
 
   def create_from_filename 
@@ -59,12 +56,9 @@ class Song
     song.artist_name = (name.split(" - ")[0])
     @@all << song
     song
-    #read description
   end
   
   def destroy_all
-    #reset state of @@all to an empty array 
-    #deletes all previous song instances 
     @@all.clear
   end
   
