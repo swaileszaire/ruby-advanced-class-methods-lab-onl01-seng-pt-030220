@@ -73,13 +73,14 @@ class Song
   end
   
   def alphabetical 
-    
+     @@all.sort_by{|x| x.name}
       #returns all songs in ascending order a-z
       #use array sort_by 
   end
   
   def new_from_filename 
-    #description is way too long like damn 
+    
+    #description is way too long like damn
   end
 
   def create_from_filename 
