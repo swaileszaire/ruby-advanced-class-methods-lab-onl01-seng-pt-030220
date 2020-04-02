@@ -47,7 +47,7 @@ class Song
   end
     
     
-  def find by name 
+  def find_by_name 
       @@all.find{|x| x.name == name}
     #takes string name of song 
     #returns matching instance of song with name 
@@ -57,7 +57,7 @@ class Song
   end 
     
   def find_or_create_by_name 
-    self.find
+    self.find_by_name || self.create_by_name 
     #takes string name 
     #return matching song instance with name 
     #or
@@ -73,6 +73,7 @@ class Song
   end
   
   def alphabetical 
+    
       #returns all songs in ascending order a-z
       #use array sort_by 
   end
