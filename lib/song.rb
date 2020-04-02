@@ -12,6 +12,7 @@ class Song
 
   def self.create(song)
     song = self.new
+    song
     #saves it to the @@all class 
     #or through song.all
     #return song instance that was saved
