@@ -98,5 +98,6 @@ class Song
   def destroy_all
     #reset state of @@all to an empty array 
     #deletes all previous song instances 
+    @@
   end
   
