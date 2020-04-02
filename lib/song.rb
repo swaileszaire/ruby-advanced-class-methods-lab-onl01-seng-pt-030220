@@ -37,6 +37,7 @@ class Song
     song = self.new 
     song.name = name 
     @@all << song 
+    song 
     #takes string name of song 
     #returns song instance with name set as name property 
     #song saved to @@all 
