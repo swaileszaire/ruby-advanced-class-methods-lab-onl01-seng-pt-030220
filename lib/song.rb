@@ -48,6 +48,7 @@ class Song
     
     
   def find by name 
+      @@all.find{|x| x.name == name}
     #takes string name of song 
     #returns matching instance of song with name 
     
@@ -56,7 +57,7 @@ class Song
   end 
     
   def find_or_create_by_name 
-    @@all.find{|x| x.name == name}
+    
     #takes string name 
     #return matching song instance with name 
     #or
